@@ -1,11 +1,9 @@
 import Menu from "../componente/menu";
-import Carta from "../componente/card";
 
 function Registro() {
     return (
         <div>
             <Menu />
-            <Carta />
             <div classNameName="container">
                 <form className="row g-3">
                     <div className="col-md-6">

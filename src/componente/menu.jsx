@@ -6,7 +6,7 @@ function Menu() {
             <ul className="nav nav-pills" style={{backgroundColor: 'black',
             }}>
                 <li className="nav-item">
-                    <Link className="nav-link active" aria-current="page" to="/">JeronimoPuto</Link>
+                    <Link className="nav-link active" aria-current="page" to="/">saludVital</Link>
                 </li>
                 <li className="nav-item">
                     <Link className="nav-link active " to="/perfil">Perfil</Link>

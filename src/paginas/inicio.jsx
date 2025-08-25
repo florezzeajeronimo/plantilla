@@ -1,11 +1,11 @@
 import Menu from "../componente/menu";
-import Carta from "../componente/card";
 
 function Inicio() {
     return (
         <div>
             <Menu />
-            <h1>pagina de Inicio</h1>
+            <h1>Salud Vital</h1>
+            <h2>una pagina que te ayudara con tu salud</h2>
         </div>
     );
 }

@@ -1,7 +1,7 @@
 function Saludo({nombre}) {
     return (
         <div>
-            <h1>hola {nombre}, bienvenidos a mi aplicacion react</h1>
+            <h1>¡Hola {nombre}, bienvenido a mi aplicación React!</h1>
         </div>
     );
 }

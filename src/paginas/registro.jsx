@@ -1,10 +1,11 @@
-import Menu from "../componente/menu";
+import Menu from "../componentes/menu";
+import Carta from '../componentes/card';
 
 function Registro() {
     return (
         <div>
             <Menu />
-            <div classNameName="container">
+            <div className="container">
                 <form className="row g-3">
                     <div className="col-md-6">
                         <label for="inputEmail4" className="form-label">Email</label>
@@ -50,8 +51,9 @@ function Registro() {
                     </div>
                 </form>
             </div>
+            <Carta />
+
         </div>
     );
 }
-
 export default Registro;

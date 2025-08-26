@@ -1,13 +1,15 @@
-import Menu from "../componente/menu";
+
+import Menu from "../componentes/menu";
+import Carta from '../componentes/card';
 
 function Inicio() {
     return (
         <div>
-            <Menu />
-            <h1>Salud Vital</h1>
-            <h2>una pagina que te ayudara con tu salud</h2>
+            <Menu/>
+             <h1>Página de Inicio</h1>   
+            <Carta/>
+         
         </div>
     );
 }
-
 export default Inicio;

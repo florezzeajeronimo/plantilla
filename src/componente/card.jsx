@@ -1,11 +1,16 @@
 function Carta() {
     return (
         <div className="container">
-            <div class="card">
-                <h5 class="card-header">Informacion SaludVital</h5>
-                <div class="card-body">
-                    <h5 class="card-title">Bienvenido a SaludVital</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content. With supporting text below as a natural lead-in to additional content.</p>
+            <div className="card text-center">
+                <div className="card-header">
+                    Información
+                </div>
+                <div className="card-body">
+                    <h5 className="card-title">BIENVENIDO A LA SALLE</h5>
+                    <p className="card-text">Santiaogo es tan llorón que no puede dar una clase sin trabarse.</p>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfWOC21EQRs_SDa8x5APvITyu4877yL2Hfwg&s" className="card-img-top" alt="" />
+                </div>
+                <div className="card-footer text-body-secondary">
 
                 </div>
             </div>
@@ -14,4 +19,4 @@ function Carta() {
     );
 }
 
-export default Carta; 
+export default Carta;

@@ -1,12 +1,14 @@
-import Menu from "../componente/menu";
+import Menu from "../componentes/menu";
+import Carta from '../componentes/card';
 
-function InicioSesion() {
+function Iniciosesion() {
     return (
         <div>
             <Menu/>
-            <h1>Inicio de sesion</h1>
+            <h1>Página de Inicio de sesión</h1>   
+            <Carta/>
+          
         </div>
     );
 }
-
-export default InicioSesion;
+export default Iniciosesion;

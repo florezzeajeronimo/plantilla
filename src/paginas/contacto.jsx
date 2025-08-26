@@ -1,12 +1,14 @@
-import Menu from "../componente/menu";
+import Menu from "../componentes/menu";
+import Carta from '../componentes/card';
 
 function Contacto() {
     return (
         <div>
-            <Menu />
-            <h1>pagina de Contacto</h1>
+            <Menu/>
+            <h1>Página de Contacto</h1>
+            <Carta/>
+            
         </div>
     );
 }
-
-export default Contacto; 
+export default Contacto;

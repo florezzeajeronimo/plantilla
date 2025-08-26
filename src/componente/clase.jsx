@@ -1,20 +1,20 @@
-import Saludo from "./saludo"
-import Contador from "./contador"
-import BotonPersonalizado from "./boton"
+
+
+import Saludo from "./saludo";
+import Contador from "./contador";
+import BotonPersonalizado from "./boton";
 
 function Clase() {
   const saludar = () => {
-    alert("¡hola jeroysofi!");
+    alert("¡Hola, que feo eres!");
   }
 
-
   return (
-    <div>
-      <Saludo nombre="sofiayjero" />
-      <BotonPersonalizado texto="saludar" color="green" onClick={saludar}></BotonPersonalizado>
-      <Contador/>
-    </div>
+   <div>
+    <Saludo nombre="miseria cognitiva"/>
+    <BotonPersonalizado texto="Saludar" color="blue" onClick={saludar} />
+    <Contador/>
+   </div>
   );
 }
-
-export default Clase; 
+export default Clase;

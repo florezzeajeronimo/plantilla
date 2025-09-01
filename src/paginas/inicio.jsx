@@ -6,7 +6,6 @@ function Inicio() {
     return (
         <div>
             <Menu/>
-             <h1>Página de Inicio</h1>   
             <Carta/>
          
         </div>

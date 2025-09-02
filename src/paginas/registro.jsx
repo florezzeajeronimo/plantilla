@@ -1,59 +1,54 @@
 import Menu from "../componentes/menu";
-import Carta from '../componentes/card';
-
 function Registro() {
     return (
-        <div>
-            <Menu />
-            <div className="container">
+        <div className="container">
+            <div>
+                <Menu />
+
+                <h1>REGISTRARSE</h1>
+
                 <form className="row g-3">
                     <div className="col-md-6">
-                        <label for="inputEmail4" className="form-label">Email</label>
-                        <input type="email" className="form-control" id="inputEmail4"/>
+                        <label for="validationServer01" className="form-label">Correo Electrónico </label>
+                        <input type="text" className="form-control is-valid" id="validationServer01" value=" " required />
+                        <div className="valid-feedback">
+                            Ingrese su correo electrónico
+                        </div>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputPassword4" className="form-label">Password</label>
-                        <input type="password" className="form-control" id="inputPassword4"/>
-                    </div>
-                    <div className="col-12">
-                        <label for="inputAddress" className="form-label">Address</label>
-                        <input type="text" className="form-control" id="inputAddress" placeholder="1234 Main St"/>
-                    </div>
-                    <div className="col-12">
-                        <label for="inputAddress2" className="form-label">Address 2</label>
-                        <input type="text" className="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor"/>
+                        <label for="validationServer02" className="form-label">Fecha de nacimiento</label>
+                        <input type="text" className="form-control is-valid" id="validationServer02" value=" " required />
+                        <div className="valid-feedback">
+                            Por favor ingrese su fecha de nacimiento.
+                        </div>
                     </div>
                     <div className="col-md-6">
-                        <label for="inputCity" className="form-label">City</label>
-                        <input type="text" className="form-control" id="inputCity"/>
-                    </div>
-                    <div className="col-md-4">
-                        <label for="inputState" className="form-label">State</label>
-                        <select id="inputState" className="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div className="col-md-2">
-                        <label for="inputZip" className="form-label">Zip</label>
-                        <input type="text" className="form-control" id="inputZip"/>
-                    </div>
-                    <div className="col-12">
-                        <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck"/>
-                                <label className="form-check-label" for="gridCheck">
-                                    Check me out
-                                </label>
+                        <label for="validationServerUsername" className="form-label">Contraseña</label>
+                        <div className="input-group has-validation">
+                            <input type="text" className="form-control is-invalid" id="validationServerUsername" aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback" required />
+                            <div id="validationServerUsernameFeedback" className="invalid-feedback">
+                                Por favor ingrese una contraseña.
+                            </div>
                         </div>
                     </div>
                     <div className="col-12">
-                        <button type="submit" className="btn btn-primary">Sign in</button>
+                        <div className="form-check">
+                            <input className="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" aria-describedby="invalidCheck3Feedback" required />
+                            <label className="form-check-label" for="invalidCheck3">
+                                Estoy de acuerdo con los términos y condiciones.
+                            </label>
+                            <div id="invalidCheck3Feedback" className="invalid-feedback">
+                                Debes estar de acuerdo antes de continuar.
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-12">
+                        <button className="btn btn-primary" type="submit">Submit form</button>
                     </div>
                 </form>
-            </div>
-            <Carta />
 
+            </div>
         </div>
-    );
+            );
 }
-export default Registro;
+            export default Registro;

@@ -1,40 +1,54 @@
 import Menu from "../componentes/menu";
+import Jeancarlo from "../assets/img/registroimagen.jpg";
+
 
 function Iniciosesion() {
     return (
-         <div>
+
+        <div>
+
             <Menu />
             <div className="container">
-                <form className="row g-3">
-                    <div className="col-md-10">
-                        <label for="inputEmail4" className="form-label">Correo Electrónico</label>
-                        <input type="email" className="form-control" id="inputEmail4"/>
-                    </div>
-                    <div className="col-md-10">
-                        <label for="inputPassword4" className="form-label">Contraseña</label>
-                        <input type="password" className="form-control" id="inputPassword4"/>
-                    </div>
-                    <div className="col-12">
-                        <div className="form-check">
-                            <input className="form-check-input" type="checkbox" id="gridCheck"/>
-                                <label className="form-check-label" for="gridCheck">
-                                    Recordarme
-                                </label>
-                        </div>
-                    </div>
-                    <div className="col-12">
-                        <button type="submit" className="btn btn-primary">Inciar Sesión</button>
-                    </div>
-                </form>
-                
-            <div ClassName="dropdown-divider"></div>
+                <div className="row">
+                    <div className="col-md-6">
+                        <h1>INICIO DE SESIÓN</h1>
+                        <form className="row g-3">
+                            <div className="col-md-10">
+                                <label for="inputEmail4" className="form-label">Correo Electrónico</label>
+                                <input type="email" className="form-control" id="inputEmail4" />
+                            </div>
+                            <div className="col-md-10">
+                                <label for="inputPassword4" className="form-label">Contraseña</label>
+                                <input type="password" className="form-control" id="inputPassword4" />
+                            </div>
+                            <div className="col-12">
+                                <div className="form-check">
+                                    <input className="form-check-input" type="checkbox" id="gridCheck" />
+                                    <label className="form-check-label" for="gridCheck">
+                                        Recordarme
+                                    </label>
+                                </div>
+                            </div>
+                            <div className="col-12">
+                                <button type="submit" className="btn btn-primary">Inciar Sesión</button>
+                            </div>
+                        </form>
 
-                    <a ClassName="dropdown-item" href="#">Eres nuevo aquí? Registrate</a>
+                        <div ClassName="dropdown-divider"></div>
 
-                    <a ClassName="dropdown-item" href="#">Olvidé mi contraseña</a>
+                        <a ClassName="dropdown-item" href="#">Eres nuevo aquí? Registrate</a>
+                        <hr />
+
+                        <a ClassName="dropdown-item" href="#">Olvidé mi contraseña</a>
+                    </div>
+
+                    <div className="col-md-6">
+                        {/* foto */}
+                    </div>
+                </div>
             </div>
 
         </div>
-            );
+    );
 }
-            export default Iniciosesion;
+export default Iniciosesion;
